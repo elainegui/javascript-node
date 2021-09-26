@@ -20,10 +20,16 @@ class MemoryGame{
         this.screenI.updateImages(this.initialAnimals)
         //forces the screen to use 'this' from MemoryGame
         this.screenI.configPlayButton(this.play.bind(this))
+        this.screenI.configBtnVerifySelection(this.verifySelection.bind(this))
+    }
+
+    verifySelection(id, name){
+        const item = {id, name}
+        //console.log("Hello",item.id, item.name )
     }
 
     play(){
-        console.log('you clicked')
+        //console.log('you clicked')
         this.shuffle()
 
     }
