@@ -1,4 +1,5 @@
 const ID_CONTENT = "contentCard"
+const ID_BTN_PLAY = "play"
 
 class ScreenI{
     static obtainHtmlCode(item){
@@ -23,5 +24,10 @@ class ScreenI{
     static updateImages(items){
         const htmlCode = ScreenI.generateStringHtmlByImage(items)
         ScreenI.changeHtmlContent(htmlCode)
+    }
+
+    static configPlayButton(fnOnClick){
+        const btnPlay = document.getElementById(ID_BTN_PLAY)
+        btnPlay.onclick = fnOnClick
     }
 }
