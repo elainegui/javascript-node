@@ -19,12 +19,13 @@ function onLoad(){
         animal */
    // ])
 
-   const dependencies = {
-       screenI: ScreenI  //Screen I is global
+   const dependenciesScreen = {
+       screenI: ScreenI, //Screen I is global
+       util: Util
    }
 
    //initialize Memory Game
-   const memoryGame = new MemoryGame(dependencies)
+   const memoryGame = new MemoryGame(dependenciesScreen)
    memoryGame.initializeApp()
 }
 
