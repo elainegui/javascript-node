@@ -12,7 +12,9 @@ class MemoryGame{
             {img:'./icons/bone.png', name: 'dogBone'},
             {img:'./icons/boxer.png', name: 'dogboxer'},
             {img:'./icons/cat_ball.png', name: 'catBall'},
-            {img:'./icons/cat_w_tie.png', name: 'catTie'}
+            {img:'./icons/cat_w_tie.png', name: 'catTie'},
+            {img:'./icons/paper_cat.png', name: 'paperCat'},
+            {img:'./icons/dog_japan.png', name: 'dogJapan'}
         ]
 
         
